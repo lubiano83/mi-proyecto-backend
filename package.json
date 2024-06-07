@@ -12,8 +12,8 @@
     "stop-windows": "taskkill /F /IM node.exe",
     "lint": "eslint ./src --fix"
   },
-  "node-engines": {
-    "node": "16.x"
+  "engines": {
+    "node": ">=14.x"
   },
   "repository": {
     "type": "git",
