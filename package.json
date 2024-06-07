@@ -1,0 +1,34 @@
+{
+  "name": "clase-11",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node --watch --no-warnings app.js",
+    "stop-mac": "pkill -f node",
+    "stop-linux": "killall -9 node",
+    "stop-windows": "taskkill /F /IM node.exe",
+    "lint": "eslint ./src --fix"
+  },
+  "node-engines": {
+    "node": "16.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lubiano83/mi-proyecto-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-handlebars": "^7.1.2",
+    "socket.io": "^4.7.5",
+    "sweetalert2": "^11.11.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0"
+  }
+}

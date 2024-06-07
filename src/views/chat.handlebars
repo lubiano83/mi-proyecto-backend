@@ -1,0 +1,30 @@
+{{!-- Estructura del Chat --}}
+<header>
+<h1>SUPER CHAT</h1>
+<h2>Websockets</h2>
+</header>
+<main>
+    <section>
+        <h3>Mensajes:</h3>
+        <div>
+            <ul id="message-logs">
+                {{!-- Aca van todos los mensajes --}}
+            </ul>
+        </div>
+    </section>
+</main>
+<footer>
+    <section>
+        <div>
+            <h3>Usuario:</h3>
+            <p id="user"></p>
+        </div>
+        <div>
+            <input type="text" name="message" id="message" placeholder="Escribe tu Mensaje..">
+        </div>
+    </section>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/api/public/js/chat.js"></script>
